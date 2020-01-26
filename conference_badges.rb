@@ -12,7 +12,7 @@ def assign_rooms(attendees)
   attendees.each_with_index.map { |name,index| list.push("Hello, #{name}! You'll be assigned to room #{index + 1}!")}
   return list 
 end 
-def printer(batch_badge_creator,assign_rooms) 
+def printer(attendees) 
   batch_badge_creator(attendees).each do |badge|
     puts badge
   end
